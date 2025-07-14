@@ -6,20 +6,7 @@ import { FiCode, FiDatabase, FiGlobe, FiTrendingUp, FiLayers, FiMonitor, FiSmart
 import Image from "next/image";
 
 const skillsData = [
-  {
-    category: "Programming Languages",
-    icon: <FiCode className="text-xl" />,
-    color: "from-blue-500 to-cyan-500",
-    skills: [
-      { name: "Python" },
-      { name: "JavaScript" },
-      { name: "C/C++" },
-      { name: "TypeScript" },
-      { name: "RISC-V" },
-      { name: "HTML/CSS" },
-      { name: "SQL" },
-    ],
-  },
+
   {
     category: "Frameworks & Libraries",
     icon: <FiLayers className="text-xl" />,
