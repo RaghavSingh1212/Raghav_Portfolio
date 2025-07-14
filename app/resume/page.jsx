@@ -164,7 +164,7 @@ const AnimatedBackground = () => {
 // Floating tech badges component
 const TechBadge = ({ tech, delay }) => (
   <motion.span
-    className="inline-block px-3 py-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-xs font-medium text-gray-200 mr-2 mb-2"
+    className="inline-block px-3 py-1 bg-[rgba(255,255,255,0.10)] backdrop-blur-sm border border-[rgba(255,255,255,0.20)] rounded-full text-xs font-medium text-gray-200 mr-2 mb-2"
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ delay: delay * 0.1, duration: 0.5 }}
@@ -259,7 +259,7 @@ const EducationExperience = () => {
                     />
                     
                     <motion.div
-                      className="p-8 rounded-2xl backdrop-blur-sm border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300"
+                      className="p-8 rounded-2xl backdrop-blur-sm border border-white/10 bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.10)] transition-all duration-300"
                       whileHover={{ 
                         scale: 1.02,
                         boxShadow: "0 20px 40px rgba(0,0,0,0.3)",
@@ -332,7 +332,7 @@ const EducationExperience = () => {
                     />
                     
                     <motion.div
-                      className="p-8 rounded-2xl backdrop-blur-sm border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300"
+                      className="p-8 rounded-2xl backdrop-blur-sm border border-white/10 bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.10)] transition-all duration-300"
                       whileHover={{ 
                         scale: 1.02,
                         boxShadow: "0 20px 40px rgba(0,0,0,0.3)",
