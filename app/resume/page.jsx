@@ -21,7 +21,6 @@ const experienceData = [
       "Working on cutting-edge AI development projects, focusing on machine learning model optimization and data processing pipelines for large-scale AI applications.",
     logo: "/assets/sc.png",
     color: "from-blue-600 to-indigo-600",
-    tech: ["AI Development", "Machine Learning", "Data Processing", "Model Optimization"],
   },
   {
     year: "Jan 2025 - Jun 2025",
@@ -30,7 +29,6 @@ const experienceData = [
       "Optimizing GenAI inferencing with SIMD instructions and enhancing performance with Prometheus/Grafana dashboards. Exploring Retrieval-Augmented Generation to improve AI pipelines.",
     logo: "/assets/nut.png",
     color: "from-purple-500 to-pink-500",
-    tech: ["GenAI", "SIMD", "Prometheus", "Grafana", "RAG"],
   },
   {
     year: "Jan 2024 - Apr 2025",
@@ -39,7 +37,6 @@ const experienceData = [
       "Developed UI components for a goal-setting app using Angular and optimized performance with NgRx and RxJS. Created responsive UI components to improve cross-platform compatibility.",
     logo: "/assets/t4.png",
     color: "from-orange-500 to-red-500",
-    tech: ["Angular", "NgRx", "RxJS", "UI/UX"],
   },
   {
     year: "Sep 2024 - Mar 2025",
@@ -48,7 +45,6 @@ const experienceData = [
       "Improved Transformer models by reducing hallucination errors and integrated OpenAI's API with SwiProlog for efficient translation of natural language to executable Prolog facts.",
     logo: "/assets/aiea.png",
     color: "from-green-500 to-emerald-500",
-    tech: ["Transformer", "OpenAI API", "Prolog", "NLP"],
   },
   {
     year: "Sep 2023 - Mar 2025",
@@ -57,7 +53,6 @@ const experienceData = [
       "Tutored Intro Python, Abstract Python, Assembly Language, Discrete Math, Data Structure & Algorithm",
     logo: "/assets/jack.png",
     color: "from-indigo-500 to-blue-500",
-    tech: ["Teaching", "CSE20", "CSE30", "CSE12", "CSE16", "CSE101"],
   },
   {
     year: "Mar 2024 - Jun 2024",
@@ -66,7 +61,6 @@ const experienceData = [
       "Developed a career matching platform using React and Firebase, aligning 500+ student assessments with job opportunities for personalized career pathways.",
     logo: "/assets/blue.png",
     color: "from-teal-500 to-cyan-500",
-    tech: ["React", "Firebase", "Career Platform", "500+ Users"],
   },
 ];
 
@@ -361,12 +355,7 @@ const EducationExperience = () => {
                         {exp.description}
                       </p>
                       
-                      {/* Tech stack badges */}
-                      <div className="flex flex-wrap">
-                        {exp.tech.map((tech, techIndex) => (
-                          <TechBadge key={techIndex} tech={tech} delay={techIndex} />
-                        ))}
-                      </div>
+
                     </motion.div>
                   </motion.div>
                 ))}
