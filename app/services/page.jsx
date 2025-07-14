@@ -406,7 +406,7 @@ const Services = () => {
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.6 }}
                 >
-                  <div className="text-2xl">👤</div>
+                  <span className="text-2xl">👤</span>
                 </motion.div>
                 <h3 className="text-2xl font-bold text-gray-100">My Story</h3>
               </div>
