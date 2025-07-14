@@ -170,7 +170,7 @@ const AnimatedBackground = () => {
 // Compact skill item component
 const SkillItem = ({ skill, index }) => (
   <motion.div
-    className="flex items-center justify-center bg-white/5 backdrop-blur-sm rounded-lg p-3 border border-white/10 hover:border-accent/50 transition-all duration-300 hover:bg-white/10"
+    className="flex items-center justify-center bg-[rgba(255,255,255,0.05)] backdrop-blur-sm rounded-lg p-3 border border-white/10 hover:border-accent/50 transition-all duration-300 hover:bg-[rgba(255,255,255,0.10)]"
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ delay: index * 0.03, duration: 0.3 }}
@@ -244,7 +244,7 @@ const Skills = () => {
               viewport={{ once: true }}
             >
               <motion.div
-                className="p-6 rounded-xl backdrop-blur-sm border border-white/10 bg-white/5 hover:bg-white/10 transition-all duration-300 h-full"
+                className="p-6 rounded-xl backdrop-blur-sm border border-white/10 bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.10)] transition-all duration-300 h-full"
                 whileHover={{ 
                   scale: 1.02,
                   boxShadow: "0 15px 30px rgba(0,0,0,0.3)",
