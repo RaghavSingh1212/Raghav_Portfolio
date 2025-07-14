@@ -245,11 +245,13 @@ export default function Skills() {
               viewport={{ once: true }}
             >
               <motion.div
-                className="p-6 rounded-xl backdrop-blur-sm border border-white/10 bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.10)] transition-all duration-300 h-full"
+                className="p-6 rounded-xl backdrop-blur-sm border border-white/10"
+                style={{ background: 'rgba(255,255,255,0.10)' }}
                 whileHover={{ 
                   scale: 1.02,
                   boxShadow: "0 15px 30px rgba(0,0,0,0.3)",
-                  borderColor: "rgba(255,255,255,0.3)"
+                  borderColor: "rgba(255,255,255,0.3)",
+                  background: 'rgba(255,255,255,0.10)'
                 }}
               >
                 {/* Category Header */}
