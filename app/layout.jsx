@@ -21,6 +21,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={jetbrainsMono.variable}>
+        {/* Force Tailwind to generate custom background/border classes in production */}
+        <div className="hidden bg-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.10)] bg-[rgba(255,255,255,0.20)] hover:bg-[rgba(255,255,255,0.10)] border-[rgba(255,255,255,0.20)]"></div>
         <Header />
         <PageTransition>{children}</PageTransition>
       </body>
