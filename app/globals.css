@@ -1,0 +1,294 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    min-height: 100vh;
+    color: #E5E7EB;
+  }
+
+  /* .h1 {
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+  }
+  .h2 {
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+  .h3 {
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  } */
+  .h1, .h2, .h3, p, span {
+    color: #F3F4F6;
+  }
+  .text-outline {
+    -webkit-text-stroke: 1px #9CA3AF;
+  }
+
+  .text-outline-hover {
+    -webkit-text-stroke: 1px #F3F4F6;
+  }
+
+  .h1:hover, .h2:hover, .h3:hover, p:hover, span:hover {
+    color: #FFFFFF;
+    transition: color 0.3s ease-in-out;
+  }
+  .text-outline {
+    -webkit-text-stroke: 2px #D1D5DB;
+  }
+
+  /* Custom scrollbar styles */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #6B7280;
+    border-radius: 3px;
+    transition: background 0.3s ease;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #10B981;
+  }
+
+  /* Enhanced backdrop blur support */
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+
+  /* Smooth animations - exclude scroll behavior */
+  * {
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  /* Gradient text animation */
+  @keyframes gradient-shift {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-gradient {
+    animation: gradient-shift 3s ease infinite;
+    background-size: 200% 200%;
+  }
+
+  /* Animated gradient text classes */
+  .text-gradient-orange {
+    background: linear-gradient(45deg, #f97316, #ea580c, #dc2626, #f97316);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 4s ease infinite;
+  }
+
+  .text-gradient-blue {
+    background: linear-gradient(45deg, #3b82f6, #1d4ed8, #1e40af, #3b82f6);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 4s ease infinite;
+  }
+
+  .text-gradient-green {
+    background: linear-gradient(45deg, #22c55e, #16a34a, #15803d, #22c55e);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 4s ease infinite;
+  }
+
+  .text-gradient-purple {
+    background: linear-gradient(45deg, #a855f7, #9333ea, #7c3aed, #a855f7);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 4s ease infinite;
+  }
+
+  .text-gradient-pink {
+    background: linear-gradient(45deg, #ec4899, #db2777, #be185d, #ec4899);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 4s ease infinite;
+  }
+
+  .text-gradient-emerald {
+    background: linear-gradient(45deg, #10b981, #059669, #047857, #10b981);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 4s ease infinite;
+  }
+
+  .text-gradient-cyan {
+    background: linear-gradient(45deg, #06b6d4, #0891b2, #0e7490, #06b6d4);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 4s ease infinite;
+  }
+
+  /* Space-themed animations */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  @keyframes star-twinkle {
+    0%, 100% {
+      opacity: 0.3;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+
+  @keyframes nebula-drift {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    33% {
+      transform: translateX(30px) translateY(-20px);
+    }
+    66% {
+      transform: translateX(-20px) translateY(30px);
+    }
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+  }
+
+  @keyframes spaceship-thrust {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+  /* Animation classes */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-rotate {
+    animation: rotate 20s linear infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+
+  .animate-star-twinkle {
+    animation: star-twinkle 2s ease-in-out infinite;
+  }
+
+  .animate-nebula-drift {
+    animation: nebula-drift 15s ease-in-out infinite;
+  }
+
+  .animate-spaceship-thrust {
+    animation: spaceship-thrust 1s ease-in-out infinite;
+  }
+
+  /* Animation delays */
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+
+  .animation-delay-6000 {
+    animation-delay: 6s;
+  }
+
+  /* Planet-specific animations */
+  .planet-earth {
+    animation: float 8s ease-in-out infinite;
+  }
+
+  .planet-mercury {
+    animation: rotate 10s linear infinite;
+  }
+
+  .planet-venus {
+    animation: float 6s ease-in-out infinite, rotate 15s linear infinite;
+  }
+
+  .planet-mars {
+    animation: float 7s ease-in-out infinite;
+  }
+
+  .planet-jupiter {
+    animation: rotate 25s linear infinite;
+  }
+
+  .planet-saturn {
+    animation: float 9s ease-in-out infinite, rotate 30s linear infinite;
+  }
+
+  /* Space environment effects */
+  .space-bg {
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+  }
+
+  .cosmic-dust {
+    background-image: 
+      radial-gradient(2px 2px at 20px 30px, #eee, transparent),
+      radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
+      radial-gradient(1px 1px at 90px 40px, #fff, transparent),
+      radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.6), transparent);
+    background-repeat: repeat;
+    background-size: 200px 100px;
+    animation: nebula-drift 20s linear infinite;
+  }
+}
