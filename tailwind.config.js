@@ -7,6 +7,13 @@ module.exports = {
     "./app/**/*.{js,jsx}",
     "./src/**/*.{js,jsx}",
   ],
+  safelist: [
+    'bg-[rgba(255,255,255,0.05)]',
+    'bg-[rgba(255,255,255,0.10)]',
+    'bg-[rgba(255,255,255,0.20)]',
+    'hover:bg-[rgba(255,255,255,0.10)]',
+    'border-[rgba(255,255,255,0.20)]',
+  ],
   prefix: "",
   theme: {
     container: {

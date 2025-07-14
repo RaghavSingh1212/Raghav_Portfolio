@@ -3,8 +3,8 @@ import "./globals.css";
 
 // components
 
-import PageTransition from "@/components/PageTransition";
 import Header from "@/components/Header";
+import PageTransition from "@/components/PageTransition";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
