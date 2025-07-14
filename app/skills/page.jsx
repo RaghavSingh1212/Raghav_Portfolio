@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { FiCode, FiDatabase, FiCpu, FiGlobe, FiTrendingUp, FiZap, FiLayers, FiMonitor, FiSmartphone, FiServer, FiCloud, FiBox, FiTerminal, FiSettings } from "react-icons/fi";
+import { FiCode, FiDatabase, FiGlobe, FiTrendingUp, FiLayers, FiMonitor, FiSmartphone, FiServer, FiCloud, FiBox, FiTerminal, FiSettings } from "react-icons/fi";
 import Image from "next/image";
 
 const skillsData = [
