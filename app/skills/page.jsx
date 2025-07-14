@@ -171,7 +171,7 @@ const AnimatedBackground = () => {
 // Compact skill item component
 const SkillItem = ({ skill, index }) => (
   <motion.div
-    className="flex items-center justify-center border border-white/20 rounded-md px-2 py-1 m-1"
+    className="flex items-center justify-center border border-white/20 rounded-md px-4 py-2 m-2 min-w-[90px] min-h-[38px]"
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ delay: index * 0.03, duration: 0.3 }}
