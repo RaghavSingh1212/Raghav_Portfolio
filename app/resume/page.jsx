@@ -7,7 +7,7 @@ const educationData = [
     year: "2022 - 2026",
     title: "Computer Science - University of California Santa Cruz",
     description:
-      "GPA: 3.80/4.0 ; \n\n Relevant Coursework: Data Structures & Algorithms, Operating Systems, Computer Architecture, Distributed Systems, Artificial Intelligence, Machine Learning, Software Design, System Design, Cloud Computing, Abstraction, Python, Assembly Language.",
+      "GPA: 3.75/4.0 ; \n\n Relevant Coursework: Data Structures & Algorithms, Operating Systems, Computer Architecture, Distributed Systems, Artificial Intelligence, Machine Learning, Software Design, System Design, Assembly Language, Cybersecurity, Computer Organization, Computer Networks, Computer Security, NLP.",
     logo: "/assets/ucsc.png",
     color: "from-blue-500 to-cyan-500",
   },
@@ -18,25 +18,51 @@ const experienceData = [
     year: "Jun 2025 - Present",
     title: "GenAI Intern - Scale AI",
     description:
-      "Working on cutting-edge AI development projects, focusing on machine learning model optimization and data processing pipelines for large-scale AI applications.",
+      "At Scale AI, I work on improving code reasoning in LLMs by fine-tuning and evaluating models on complex Python/C++/Java problems.",
     logo: "/assets/sc.png",
     color: "from-blue-600 to-indigo-600",
+    tech: [
+      "Python",
+      "Red Teaming Tools",
+      "LLM",
+      "Outlier",
+    ]
   },
   {
     year: "Jan 2025 - Jun 2025",
-    title: "Software Engineer Co-Op Intern - Nutanix",
+    title: "Software Engineer Intern - Nutanix",
     description:
-      "Optimizing GenAI inferencing with SIMD instructions and enhancing performance with Prometheus/Grafana dashboards. Exploring Retrieval-Augmented Generation to improve AI pipelines.",
+      "At Nutanix, I built a benchmarking platform to evaluate LLM performance on CPUs across diverse hardware setups, supporting data-driven deployment decisions. I containerized the system using Docker Compose and FastAPI, integrated real-time monitoring with Prometheus and Grafana, and developed a Streamlit frontend backed by SQLite—leading to $50K+ in potential cost savings",
     logo: "/assets/nut.png",
     color: "from-purple-500 to-pink-500",
+    tech: [
+      "Docker Compose",
+      "FastAPI",
+      "Streamlit",
+      "SQLite",
+      "Prometheus",
+      "Grafana",
+      "Node Exporter",
+      "Intel PCM",
+      "vLLM"
+    ]
   },
   {
     year: "Jan 2024 - Apr 2025",
     title: "Software Developer - Tech4Good",
     description:
-      "Developed UI components for a goal-setting app using Angular and optimized performance with NgRx and RxJS. Created responsive UI components to improve cross-platform compatibility.",
+      "I led the development of 25+ responsive UI components using TypeScript, React, Angular (NgRx, RxJS), and integrated backends with Node.js, Flask, and MongoDB.",
     logo: "/assets/t4.png",
     color: "from-orange-500 to-red-500",
+    tech: [
+      "TypeScript",
+      "React (JSX)",
+      "Node.js",
+      "Flask",
+      "MongoDB",
+      "Firebase",
+      "Figma"
+    ]
   },
   {
     year: "Sep 2024 - Mar 2025",
@@ -45,6 +71,10 @@ const experienceData = [
       "Improved Transformer models by reducing hallucination errors and integrated OpenAI's API with SwiProlog for efficient translation of natural language to executable Prolog facts.",
     logo: "/assets/aiea.png",
     color: "from-green-500 to-emerald-500",
+    tech: [
+      "API",
+      "LLM"
+    ]
   },
   {
     year: "Sep 2023 - Mar 2025",
@@ -61,6 +91,10 @@ const experienceData = [
       "Developed a career matching platform using React and Firebase, aligning 500+ student assessments with job opportunities for personalized career pathways.",
     logo: "/assets/blue.png",
     color: "from-teal-500 to-cyan-500",
+    tech: [
+      "React",
+      "Firebase"
+    ]
   },
 ];
 
@@ -354,7 +388,13 @@ const EducationExperience = () => {
                       <p className="text-gray-300 leading-relaxed mb-4">
                         {exp.description}
                       </p>
-                      
+                      {exp.tech && (
+                        <div className="flex flex-wrap gap-2 mb-2">
+                          {exp.tech.map((tech, techIndex) => (
+                            <TechBadge key={tech} tech={tech} delay={techIndex} />
+                          ))}
+                        </div>
+                      )}
 
                     </motion.div>
                   </motion.div>
