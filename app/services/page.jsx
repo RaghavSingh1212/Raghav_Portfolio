@@ -21,17 +21,17 @@ const companyData = [
     type: "experience"
   },
   {
-    name: "Tech4Good",
-    logo: "/assets/t4.png",
-    description: "Software Developer",
-    date: "Jan 2024 - Mar 2025",
-    type: "experience"
-  },
-  {
     name: "UCSC Blueprint",
     logo: "/assets/blue.png",
     description: "Web Developer",
     date: "Mar 2024 - May 2024",
+    type: "experience"
+  },
+  {
+    name: "Tech4Good",
+    logo: "/assets/t4.png",
+    description: "Software Developer",
+    date: "Jan 2024 - Mar 2025",
     type: "experience"
   },
   {

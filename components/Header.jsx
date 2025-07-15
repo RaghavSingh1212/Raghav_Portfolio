@@ -9,14 +9,14 @@ const Header = () => {
     <header className="py-8 xl:py-12 text-white bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
       <div className="container mx-auto flex justify-between items-center">
         {/* logo */}
-        <Link href="#about">
+        {/* <Link href="#about">
           <h1 className="text-4xl font-semibold cursor-pointer">
             Raghav<span className="text-accent"></span>
           </h1>
-        </Link>
+        </Link> */}
 
         {/* desktop nav & hire me button */}
-        <div className="hidden xl:flex items-center gap-8">
+        <div className="hidden xl:flex items-center gap-8 ml-auto">
           <Nav />
 
         </div>
