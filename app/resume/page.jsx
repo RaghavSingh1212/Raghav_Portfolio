@@ -192,11 +192,11 @@ const AnimatedBackground = () => {
 // Floating tech badges component
 const TechBadge = ({ tech, delay }) => (
   <motion.span
-    className="inline-block px-3 py-1 bg-[rgba(255,255,255,0.10)] backdrop-blur-sm border border-[rgba(255,255,255,0.20)] rounded-full text-xs font-medium text-gray-200 mr-2 mb-2"
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
+    className="px-4 py-2 bg-gradient-to-r from-gray-800/80 to-gray-700/80 text-gray-200 text-sm font-medium rounded-xl border border-gray-600/50 hover:border-accent/50 hover:bg-gradient-to-r hover:from-accent/20 hover:to-accent/10 transition-all duration-300 backdrop-blur-sm shadow-lg m-1"
+    initial={{ opacity: 0, scale: 0.8 }}
+    whileInView={{ opacity: 1, scale: 1 }}
     transition={{ delay: delay * 0.1, duration: 0.5 }}
-    whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.2)" }}
+    whileHover={{ scale: 1.05, y: -2, boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)" }}
   >
     {tech}
   </motion.span>
