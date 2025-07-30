@@ -6,6 +6,19 @@
   body {
     min-height: 100vh;
     color: #E5E7EB;
+    overflow-x: hidden; /* Prevent horizontal scroll on mobile */
+  }
+
+  /* Mobile-specific styles */
+  @media (max-width: 640px) {
+    html {
+      font-size: 14px; /* Slightly smaller base font for mobile */
+    }
+    
+    /* Prevent zoom on input focus for iOS */
+    input, textarea, select {
+      font-size: 16px;
+    }
   }
 
   /* .h1 {

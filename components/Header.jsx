@@ -3,11 +3,12 @@ import { Button } from "./ui/button";
 
 // components
 import Nav from "./Nav";
+import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
-    <header className="py-8 xl:py-12 text-white bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-      <div className="container mx-auto flex justify-between items-center">
+    <header className="py-4 sm:py-6 xl:py-12 text-white bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <div className="container mx-auto flex justify-between items-center px-4">
         {/* logo */}
         {/* <Link href="#about">
           <h1 className="text-4xl font-semibold cursor-pointer">
@@ -22,8 +23,7 @@ const Header = () => {
         </div>
 
         {/* mobile nav */}
-        <div className="xl:hidden">
-        </div>
+        <MobileNav />
       </div>
     </header>
   );

@@ -363,7 +363,7 @@ const Services = () => {
         style={{ y }}
       />
       
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Animated Title */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -372,7 +372,7 @@ const Services = () => {
           className="text-center mb-16"
         >
           <motion.h2 
-            className="text-6xl font-bold mb-4"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
           >
             About <span className="text-gradient-emerald">Me</span>
           </motion.h2>
@@ -384,17 +384,17 @@ const Services = () => {
           />
         </motion.div>
 
-        <div className="flex flex-col lg:flex-row gap-12 items-start">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
           {/* Left Section: About Me */}
           <motion.div 
-            className="flex-1 max-w-[50%]"
+            className="flex-1 w-full lg:max-w-[50%]"
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
             <motion.div
-              className="p-8 rounded-2xl backdrop-blur-sm border border-white/10 bg-white/5"
+              className="p-4 sm:p-6 lg:p-8 rounded-2xl backdrop-blur-sm border border-white/10 bg-white/5"
               whileHover={{ 
                 boxShadow: "0 20px 40px rgba(0,0,0,0.3)",
                 borderColor: "rgba(255,255,255,0.3)"
@@ -414,7 +414,7 @@ const Services = () => {
               {/* Typewriter effect with pre-allocated height */}
               <div
                 ref={typingSectionRef}
-                className="text-justify text-lg font-medium leading-relaxed text-gray-300 whitespace-pre-wrap overflow-hidden min-h-[360px]"
+                className="text-justify text-sm sm:text-base lg:text-lg font-medium leading-relaxed text-gray-300 whitespace-pre-wrap overflow-hidden min-h-[200px] sm:min-h-[280px] lg:min-h-[360px]"
               >
                 {isVisible && (
                   <Typewriter
@@ -435,7 +435,7 @@ const Services = () => {
 
           {/* Right Section: Company Cards */}
           <motion.div 
-            className="flex-1 max-w-[50%]"
+            className="flex-1 w-full lg:max-w-[50%]"
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -443,7 +443,7 @@ const Services = () => {
           >
             {/* Timeline Section */}
             <div className="w-full max-w-3xl mx-auto">
-              <div className="relative">
+              <div className="relative hidden lg:block">
                 {/* Central Timeline Line - Background */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-px h-full bg-gray-600/30"></div>
                 
@@ -521,6 +521,41 @@ const Services = () => {
                     </motion.div>
                   ))}
                 </div>
+              </div>
+            </div>
+
+            {/* Mobile Timeline */}
+            <div className="lg:hidden w-full">
+              <div className="space-y-4">
+                {companyData.map((company, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    className="w-full"
+                  >
+                    <motion.div
+                      className="bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 hover:border-emerald-400/50 transition-all duration-300"
+                      whileHover={{ scale: 1.02 }}
+                    >
+                      <div className="flex items-center gap-3 mb-2">
+                        <motion.img
+                          src={company.logo}
+                          alt={`${company.name} Logo`}
+                          className="w-8 h-8 object-contain rounded-sm"
+                          whileHover={{ scale: 1.05 }}
+                          transition={{ duration: 0.3 }}
+                        />
+                        <div className="flex-1">
+                          <h4 className="text-sm font-bold text-white">{company.name}</h4>
+                          <p className="text-xs text-emerald-400">{company.date}</p>
+                        </div>
+                      </div>
+                      <p className="text-sm text-gray-300">{company.description}</p>
+                    </motion.div>
+                  </motion.div>
+                ))}
               </div>
             </div>
           </motion.div>

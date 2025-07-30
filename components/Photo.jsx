@@ -15,7 +15,7 @@ const Photo = () => {
       >
         {/* Animated Circle */}
         <motion.svg
-          className="w-[250px] xl:w-[350px] h-[250px] xl:h-[350px]"
+          className="w-[200px] sm:w-[250px] xl:w-[350px] h-[200px] sm:h-[250px] xl:h-[350px]"
           fill="transparent"
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ const Photo = () => {
             scale: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="absolute w-[180px] h-[180px] xl:w-[250px] xl:h-[250px] 
+          className="absolute w-[140px] h-[140px] sm:w-[180px] sm:h-[180px] xl:w-[250px] xl:h-[250px] 
                      rounded-full bg-contain bg-no-repeat bg-center"
           style={{ backgroundImage: "url('/assets/photo.png')" }}
         ></motion.div>
