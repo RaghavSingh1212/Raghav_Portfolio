@@ -1,144 +1,175 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-
-const links = [
-  {
-    name: "home",
-    path: "/",
-  },
-  {
-    name: "about me",
-    path: "#services",
-  },
-  {
-    name: "resume",
-    path: "#resume",
-  },
-  {
-    name: "skills",
-    path: "#skills",
-  },
-  {
-    name: "work",
-    path: "#work",
-  },
-  {
-    name: "contact",
-    path: "#contact",
-  },
-];
+import { FaHome, FaUser, FaCode, FaFolder, FaGraduationCap, FaEnvelope, FaTimes } from "react-icons/fa";
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
-  const scrollToSection = (event, id) => {
+  const navItems = [
+    {
+      name: "Home",
+      path: "/",
+      section: "home",
+      icon: <FaHome size={20} />
+    },
+    {
+      name: "About Me",
+      path: "#services",
+      section: "services",
+      icon: <FaUser size={20} />
+    },
+    {
+      name: "Journey",
+      path: "#resume",
+      section: "resume",
+      icon: <FaGraduationCap size={20} />
+    },
+    {
+      name: "Skills",
+      path: "#skills",
+      section: "skills",
+      icon: <FaCode size={20} />
+    },
+    {
+      name: "Projects",
+      path: "#work",
+      section: "work",
+      icon: <FaFolder size={20} />
+    },
+    {
+      name: "Contact",
+      path: "#contact",
+      section: "contact",
+      icon: <FaEnvelope size={20} />
+    }
+  ];
+
+  const scrollToSection = (event, id, sectionName) => {
     event.preventDefault();
+    setActiveSection(sectionName);
     const section = document.querySelector(id);
     section?.scrollIntoView({ behavior: "smooth", block: "start" });
     setIsOpen(false);
   };
 
   return (
-    <div className="xl:hidden">
-      {/* Hamburger Button */}
-      <button
+    <>
+              {/* Mobile Menu Button */}
+        <motion.button
+          className="md:hidden p-2 rounded-xl bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-colors"
         onClick={() => setIsOpen(!isOpen)}
-        className="relative z-50 p-2 text-white hover:text-accent transition-colors"
-        aria-label="Toggle mobile menu"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
       >
-        <div className="w-6 h-6 flex flex-col justify-center items-center">
-          <span
-            className={`block w-5 h-0.5 bg-current transition-all duration-300 ${
-              isOpen ? "rotate-45 translate-y-1" : "-translate-y-1"
-            }`}
-          />
-          <span
-            className={`block w-5 h-0.5 bg-current transition-all duration-300 ${
-              isOpen ? "opacity-0" : "opacity-100"
-            }`}
-          />
-          <span
-            className={`block w-5 h-0.5 bg-current transition-all duration-300 ${
-              isOpen ? "-rotate-45 -translate-y-1" : "translate-y-1"
-            }`}
-          />
-        </div>
-      </button>
+        <AnimatePresence mode="wait">
+          {isOpen ? (
+            <motion.div
+              key="close"
+              initial={{ rotate: -90, opacity: 0 }}
+              animate={{ rotate: 0, opacity: 1 }}
+              exit={{ rotate: 90, opacity: 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              <FaTimes size={20} />
+            </motion.div>
+          ) : (
+            <motion.div
+              key="menu"
+              initial={{ rotate: 90, opacity: 0 }}
+              animate={{ rotate: 0, opacity: 1 }}
+              exit={{ rotate: -90, opacity: 0 }}
+              transition={{ duration: 0.2 }}
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.button>
 
       {/* Mobile Menu Overlay */}
       <AnimatePresence>
         {isOpen && (
-          <>
+          <motion.div
+            className="fixed inset-0 z-40 md:hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setIsOpen(false)}
+          >
             {/* Backdrop */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
-              className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
-              onClick={() => setIsOpen(false)}
-            />
-
-            {/* Menu Panel */}
-            <motion.div
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 h-full w-80 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 z-50 shadow-2xl"
+            <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
+            
+                         {/* Menu Content */}
+             <motion.div
+               className="absolute top-16 right-4 w-64 bg-gray-900/95 backdrop-blur-md rounded-xl border border-white/10 shadow-2xl"
+              initial={{ opacity: 0, scale: 0.95, y: -20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: -20 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+              onClick={(e) => e.stopPropagation()}
             >
-              <div className="flex flex-col h-full">
-                {/* Header */}
-                <div className="flex justify-between items-center p-6 border-b border-gray-700">
-                  <h2 className="text-xl font-bold text-white">Menu</h2>
-                  <button
-                    onClick={() => setIsOpen(false)}
-                    className="p-2 text-gray-400 hover:text-white transition-colors"
-                  >
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </button>
+              <div className="p-4">
+                <div className="text-center mb-6">
+                  <h3 className="text-lg font-bold text-white mb-1">Navigation</h3>
+                  <div className="w-12 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded-full" />
                 </div>
-
-                {/* Navigation Links */}
-                <nav className="flex-1 p-6">
-                  <ul className="space-y-4">
-                    {links.map((link, index) => (
-                      <motion.li
-                        key={index}
-                        initial={{ opacity: 0, x: 20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: index * 0.1 }}
-                      >
-                        <a
-                          href={link.path}
-                          onClick={(e) => scrollToSection(e, link.path)}
-                          className="block py-3 px-4 text-lg text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-lg transition-all duration-300 font-medium"
-                        >
-                          {link.name}
-                        </a>
-                      </motion.li>
-                    ))}
-                  </ul>
+                
+                <nav className="space-y-2">
+                                     {navItems.map((item, index) => {
+                     const isActive = activeSection === item.section;
+                     
+                     return (
+                       <motion.a
+                         key={index}
+                         href={item.path}
+                         onClick={(e) => item.path !== "/" ? scrollToSection(e, item.path, item.section) : (setActiveSection("home"), setIsOpen(false))}
+                         className={`flex items-center gap-3 p-3 rounded-lg transition-all duration-200 group ${
+                           isActive 
+                             ? "text-cyan-400 bg-cyan-400/10 border border-cyan-400/20" 
+                             : "text-gray-300 hover:text-white hover:bg-white/5"
+                         }`}
+                         initial={{ opacity: 0, x: 20 }}
+                         animate={{ opacity: 1, x: 0 }}
+                         transition={{ duration: 0.3, delay: index * 0.1 }}
+                         whileHover={{ x: 5 }}
+                       >
+                         <div className={`transition-colors ${isActive ? "text-cyan-400" : "text-cyan-400 group-hover:text-cyan-300"}`}>
+                           {item.icon}
+                         </div>
+                         <span className="font-medium">{item.name}</span>
+                         
+                         {/* Active indicator */}
+                         {isActive && (
+                           <motion.div
+                             className="w-1 h-6 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full ml-auto"
+                             initial={{ scaleX: 0 }}
+                             animate={{ scaleX: 1 }}
+                             transition={{ duration: 0.2 }}
+                           />
+                         )}
+                       </motion.a>
+                     );
+                   })}
                 </nav>
-
+                
                 {/* Footer */}
-                <div className="p-6 border-t border-gray-700">
-                  <div className="text-center text-gray-400 text-sm">
+                <div className="mt-6 pt-4 border-t border-white/10">
+                  <div className="text-center text-xs text-gray-400">
                     <p>Raghav Singh</p>
-                    <p className="mt-1">Software Engineer & AI Enthusiast</p>
+                    <p className="text-cyan-400">Software Engineer & AI Enthusiast</p>
                   </div>
                 </div>
               </div>
             </motion.div>
-          </>
+          </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </>
   );
 };
 

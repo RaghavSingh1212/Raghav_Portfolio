@@ -4,7 +4,7 @@ import path from 'path';
 
 export async function POST(req) {
   try {
-    const { message } = await req.json();
+    const { message, chatHistory = [] } = await req.json();
 
     if (!message || message.trim() === '') {
       return NextResponse.json({ 
@@ -15,6 +15,11 @@ export async function POST(req) {
     // Read your context from a text file
     const filePath = path.join(process.cwd(), 'lib', 'raghav_context.txt');
     const RAG_CONTEXT = await fs.readFile(filePath, 'utf-8');
+
+    // Build conversation context from chat history
+    const conversationContext = chatHistory.length > 0 
+      ? `\n\nPrevious conversation context:\n${chatHistory.map(msg => `${msg.role}: ${msg.content}`).join('\n')}`
+      : '';
 
     // Enhanced prompt engineering for better responses
     const enhancedPrompt = `You are an AI assistant that helps people learn about Raghav Singh, a software engineer and AI enthusiast. 
@@ -32,6 +37,12 @@ IMPORTANT INSTRUCTIONS:
 6. Keep responses conversational but informative
 7. If you don't have specific information about something, say so honestly
 8. Always maintain a positive and enthusiastic tone about Raghav's work and potential
+9. Reference previous conversation context when relevant
+10. When discussing projects, mention specific technologies and impact
+11. Be engaging and encourage follow-up questions
+12. Use emojis occasionally to make responses more friendly
+
+${conversationContext}
 
 User Question: ${message}
 

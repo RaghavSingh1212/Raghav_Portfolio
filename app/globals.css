@@ -84,6 +84,21 @@
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
 
+  /* Custom cursor styles - keep default cursor visible */
+  body {
+    cursor: auto;
+  }
+  
+  /* Keep default cursor on interactive elements */
+  a, button, input, textarea, select, [role="button"], [tabindex] {
+    cursor: pointer;
+  }
+  
+  /* Ensure default cursor is visible on all elements */
+  * {
+    cursor: auto;
+  }
+
   /* Gradient text animation */
   @keyframes gradient-shift {
     0%, 100% {
