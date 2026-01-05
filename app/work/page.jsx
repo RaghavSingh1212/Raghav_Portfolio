@@ -19,6 +19,16 @@ const projects = [
     color: "from-indigo-500 to-purple-500",
   },
   {
+    num: "03",
+    title: "Nimbus-Distributed Task Scheduler",
+    description:
+      "Built a fault-tolerant distributed task scheduler inspired by Kubernetes, where a central scheduler coordinates work across multiple worker nodes using heartbeat-based failure detection and lease-based task assignment. The system automatically recovers from worker crashes by reassigning in-progress tasks, supports priority-based scheduling, and ensures reliable task execution through retries and durable state tracking.",
+    stack: ["Go", "gRPC", "SQLite", "Docker"],
+    image: "/assets/work/thumb2.png",
+    github: "https://github.com/RaghavSingh1212/AI-Slide-Generator",
+    color: "from-purple-500 to-pink-500",
+  },
+  {
     num: "02",
     title: "CircleRush",
     description:
