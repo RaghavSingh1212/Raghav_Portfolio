@@ -284,7 +284,7 @@ const Home = () => {
                         Resume
                       </a>
                       <a
-                        href="https://www.linkedin.com/in/raghavsingh1212"
+                        href="https://www.linkedin.com/in/raghav1212/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 px-4 sm:px-7 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-emerald-400 to-green-500 text-white font-bold shadow-lg hover:from-green-500 hover:to-emerald-400 transition-all duration-300 text-sm sm:text-lg tracking-wide group"
