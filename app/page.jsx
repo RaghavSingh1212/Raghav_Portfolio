@@ -275,7 +275,7 @@ const Home = () => {
                 <div className="flex flex-col xl:flex-row items-center gap-4 sm:gap-8">
                   <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full justify-center xl:justify-start px-4 sm:px-0">
                                           <a
-                        href="https://drive.google.com/file/d/1CAPITNfZR64xEPQgfi_duCYq9RLIlDtk/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1Q3GmPP_TYM1pnBe0zzceWZGk7BNcbv7a/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 px-4 sm:px-7 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-white font-bold shadow-lg hover:from-blue-500 hover:to-cyan-400 transition-all duration-300 text-sm sm:text-lg tracking-wide group"
