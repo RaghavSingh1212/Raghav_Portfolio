@@ -1,164 +1,146 @@
-# Raghav Singh - Software Engineer & AI Enthusiast
+Raghav Singh is a software engineer and AI researcher based in Santa Cruz, CA, graduated B.S. in Computer Science at the University of California, Santa Cruz. He graduated in December 2025 and has consistently maintained a strong academic record (GPA ~3.7–3.8/4.0), earning Dean’s Honors multiple times.
 
-## Personal Background
-Raghav Singh is a passionate software engineer and AI enthusiast currently pursuing his B.S. in Computer Science at UC Santa Cruz. He is deeply interested in artificial intelligence, machine learning, and full-stack development. Raghav is known for his problem-solving skills, innovative thinking, and dedication to building impactful software solutions.
+Raghav specializes in artificial intelligence, machine learning, distributed systems, and full-stack development. He is particularly interested in large language models (LLMs), AI reasoning, benchmarking, performance optimization, and scalable system design. He is known for strong problem-solving ability, technical depth, and the ability to turn research ideas into production-ready systems.
 
-## Technical Skills
+====================
+EDUCATION
+====================
+University of California, Santa Cruz  
+Bachelor of Science in Computer Science (Honors Track)  
+Graduation: December 2025  
 
-### Programming Languages
-- **JavaScript/TypeScript**: Expert level with React, Next.js, Node.js
-- **Python**: Advanced proficiency in ML/AI, FastAPI, Streamlit, data analysis
-- **Other**: HTML/CSS, SQL, Git
+Relevant Coursework:
+Data Structures & Algorithms, Operating Systems, Computer Architecture, Distributed Systems, System Design, Discrete Mathematics, Machine Learning, Artificial Intelligence, Database Systems, Computer Networks, Data Science, Embedded Systems.
 
-### Frontend Technologies
-- React.js, Next.js, TypeScript
-- Tailwind CSS, CSS3, HTML5
-- Responsive design and mobile-first development
-- UI/UX design principles
+====================
+TECHNICAL SKILLS
+====================
+Languages:
+Python, JavaScript, TypeScript, C/C++, Go, SQL, HTML/CSS
 
-### Backend & DevOps
-- FastAPI, Node.js, Express.js
-- Docker containerization
-- Prometheus, Grafana for monitoring
-- Firebase, SQLite databases
-- RESTful APIs and microservices
+Frontend:
+React, Next.js, Angular, TypeScript, Tailwind CSS, responsive UI design, accessibility, UI/UX principles
 
-### AI/ML & Data
-- Machine Learning frameworks (TensorFlow, PyTorch)
-- Large Language Models (LLMs) optimization
-- Data pipelines and ETL processes
-- AI inference optimization
-- Transformer models research
+Backend & Systems:
+FastAPI, Node.js, Express, REST APIs, SQLite, PostgreSQL, Firebase, Docker, Kubernetes, Linux/Unix
 
-### Tools & Platforms
-- Git/GitHub, VS Code, Figma
-- Docker, Kubernetes
-- AWS/Cloud platforms
-- CI/CD pipelines
+AI / ML:
+PyTorch, TensorFlow, NumPy, scikit-learn, Transformer models, LLM fine-tuning, reinforcement learning, evaluation pipelines, AI benchmarking, inference optimization
 
-## Professional Experience
+Infrastructure & Tooling:
+Docker Compose, Prometheus, Grafana, Intel PCM, vLLM, Streamlit, Git/GitHub, CI/CD, AWS
 
-### GenAI Intern at Scale AI (Jan 2025 - Present)
-- **Role**: Working on large language model optimization and data pipelines
-- **Key Achievements**: 
-  - Optimized LLM performance and efficiency by 30% through advanced techniques
-  - Developed scalable data processing pipelines for AI training datasets
-  - Contributed to cutting-edge AI research and development
-  - Worked on improving model inference speed and accuracy
-  - Collaborated with research teams on novel AI architectures
+====================
+PROFESSIONAL EXPERIENCE
+====================
 
-### Software Engineer Co-Op at Nutanix (Jan 2025 - Jun 2025)
-- **Role**: Full-stack development and AI optimization
-- **Key Achievements**:
-  - Built comprehensive dashboards using Prometheus/Grafana for system monitoring
-  - Optimized AI inference with SIMD instructions, achieving 40% performance improvement
-  - Improved system performance and monitoring capabilities across distributed systems
-  - Developed performance-monitoring solutions for cloud infrastructure
-  - Implemented real-time alerting systems for critical infrastructure components
+Keywords Studios (Amazon AGI – Autonomy)
+Role: Technical Research Associate / AI Researcher  
+Duration: Jan 2026 – Present  
 
-### Undergraduate Researcher at AIEA Lab (Sep 2024 - Mar 2025)
-- **Role**: Research on AI and machine learning
-- **Key Achievements**:
-  - Improved Transformer models for better performance in natural language processing
-  - Integrated AI with logic programming for enhanced inference and decision-making
-  - Contributed to research on decision-making systems and automated reasoning
-  - Published research findings on AI model optimization
-  - Developed novel approaches to combining symbolic and neural AI systems
+- Lead QA and evaluation efforts for Amazon AGI Autonomy projects
+- Design evaluation rubrics and prompts for NLP and agentic AI tasks
+- Run audits, KPIs, escalations, and weekly delivery across workstreams
+- Improve pipeline efficiency by 20–40% via calibration loops and error taxonomies
+- Surface quality trends to stakeholders and reduce rework in iterative cycles
 
-### Software Developer at Tech4Good (Jan 2024 - Mar 2025)
-- **Role**: Full-stack development for social impact
-- **Key Achievements**:
-  - Built responsive UI components for goal-setting applications using React
-  - Implemented state management solutions with Redux and Context API
-  - Developed user-friendly interfaces for social impact projects
-  - Created accessible design patterns for diverse user groups
-  - Optimized application performance for low-bandwidth environments
+Scale AI  
+Role: Software Engineer Intern (GenAI)  
+Duration: Jun 2025 – Present  
 
-### Web Developer at UCSC Blueprint (Mar 2024 - May 2024)
-- **Role**: Frontend development and user experience
-- **Key Achievements**:
-  - Developed a career matching platform using React and Firebase
-  - Created intuitive user interfaces with modern design principles
-  - Implemented real-time data synchronization for dynamic content
-  - Built recommendation algorithms for career matching
-  - Integrated with external APIs for job listings and career resources
+- Fine-tune and benchmark LLMs on complex reasoning and programming datasets
+- Built a distributed reinforcement learning training framework for reasoning models
+- Orchestrated large experiment sweeps and automated evaluation of 10K+ samples/day
+- Used LLM-as-judge scoring, filtered weak outputs for human review, and reduced manual effort
+- Designed abstractions allowing researchers to plug in custom code into RL pipelines
 
-### Group Tutor at Baskin School of Engineering (Sep 2023 - Mar 2025)
-- **Role**: Teaching and mentoring computer science students
-- **Key Achievements**:
-  - Helped 50+ students understand complex programming concepts
-  - Mentored in data structures, algorithms, and software engineering principles
-  - Improved student success rates in challenging courses by 25%
-  - Developed interactive learning materials and coding exercises
-  - Provided one-on-one guidance for struggling students
+Nutanix  
+Role: Software Engineer Intern  
+Duration: Jan 2025 – Jun 2025  
 
-## Education
-- **B.S. in Computer Science** - UC Santa Cruz (Sep 2022 - Present)
-  - GPA: 3.8/4.0 (Strong academic performance)
-  - Relevant coursework: Data Structures & Algorithms, Machine Learning, Software Engineering, Database Systems, Computer Architecture, Operating Systems, Computer Networks
-  - Active in computer science clubs and organizations
-  - Dean's List recognition for academic excellence
+- Built a CPU-based LLM inference benchmarking platform comparing 10+ models
+- Designed Docker-Compose + FastAPI infrastructure for reproducible benchmarking
+- Integrated Prometheus, Grafana, Node Exporter, and Intel PCM for system metrics
+- Created dashboards for p95 latency, throughput (tokens/sec), CPU utilization
+- Built Streamlit + SQLite analytics frontend and saved the company ~$50K+
+- Identified inference bottlenecks and improved performance by ~40%
 
-## Projects & Achievements
+Artificial Intelligence Explainability & Accountability (AIEA) Lab – UCSC  
+Role: Undergraduate Researcher  
+Duration: Sep 2024 – Mar 2025  
 
-### Notable Projects
-- **Career Matching Platform**: Built with React and Firebase for UCSC Blueprint, helping 100+ students find relevant career opportunities
-- **AI-Powered Applications**: Various machine learning projects including recommendation systems and predictive analytics
-- **Performance Monitoring Systems**: Dashboard development with Prometheus/Grafana for real-time system monitoring
-- **Open Source Contributions**: Active participation in hackathons and open source projects
-- **Portfolio Website**: Built this responsive portfolio using Next.js, React, and modern web technologies
+- Built data pipelines from California DMV and NHTSA datasets
+- Trained SVMs and statistical models, improving classification accuracy by ~10%
+- Enhanced Transformer models with PyTorch and Kubernetes, reducing error by ~15%
+- Integrated natural language with logic programming for symbolic-neural reasoning
+- Worked on explainable AI and AI accountability research
 
-### Hackathons & Competitions
-- **1st Place** at UCSC Hackathon 2024 for innovative AI solution
-- **2nd Place** at CodePath Hackathon for social impact project
-- Regular participant in hackathons with focus on AI and social good
-- Won awards for innovative solutions in machine learning and web development
-- Passionate about rapid prototyping and creative problem-solving
+Tech4Good Lab – UCSC  
+Role: Undergraduate Researcher / Lead (Causeway)  
+Duration: Jan 2024 – Mar 2025  
 
-## Personal Interests & Hobbies
-- **Chess**: Strategic thinking and problem-solving (Rated 1800+ on chess.com)
-- **Hiking**: Love for nature and outdoor activities, completed 20+ trails
-- **Building Side Projects**: Constantly working on new ideas and technologies
-- **Open Source**: Active contributor to open source communities on GitHub
-- **AI/ML Research**: Following latest developments in artificial intelligence
-- **Reading**: Tech blogs, research papers, and industry publications
-- **Photography**: Capturing nature and technology through lens
+- Built Angular + NgRx + Firebase real-time applications for 200+ users
+- Implemented RxJS effects/selectors for consistent shared state
+- Shipped 15+ Angular components and collaborated via Agile sprints
+- Focused on accessibility, reliability, and real-time collaboration
 
-## Personality Traits
-- **Problem Solver**: Enjoys tackling complex technical challenges with systematic approach
-- **Innovative**: Always looking for new ways to improve and optimize existing systems
-- **Collaborative**: Works well in teams and enjoys mentoring others
-- **Curious**: Constantly learning new technologies and approaches
-- **Detail-Oriented**: Pays attention to code quality and user experience
-- **Passionate**: Deeply interested in AI and its potential to solve real-world problems
-- **Reliable**: Known for delivering high-quality work on time
-- **Adaptable**: Quick to learn new technologies and adapt to changing requirements
+UCSC Blueprint  
+Role: Web Developer  
+Duration: Mar 2024 – May 2024  
 
-## Career Goals
-- Contribute to cutting-edge AI research and development
-- Build scalable, impactful software solutions that help people
-- Mentor and help others learn programming and AI
-- Stay at the forefront of technology innovation
-- Make a positive impact through technology
-- Lead AI initiatives that benefit society
-- Contribute to open source projects and the developer community
+- Built a career-matching platform using React and Firebase
+- Designed responsive questionnaires and real-time data sync
+- Implemented recommendation logic for student career exploration
 
-## Communication Style
-When answering questions about Raghav, be:
-- **Professional but friendly**: Show his technical expertise while being approachable
-- **Specific**: Use concrete examples from his experience and achievements
-- **Enthusiastic**: Reflect his passion for technology and AI
-- **Helpful**: Provide detailed, informative responses with actionable insights
-- **Personal**: Include relevant personal interests and traits when appropriate
-- **Confident**: Highlight his capabilities and potential for growth
+Baskin School of Engineering – UCSC  
+Role: Group Tutor & Reader  
+Duration: Sep 2023 – Mar 2025  
 
-## Response Guidelines
-- Always base responses on the information provided above
-- Be specific about his skills, experience, and achievements with concrete examples
-- Mention relevant projects and technologies when appropriate
-- Include his personality traits and interests when relevant to the question
-- Provide actionable insights or recommendations when asked
-- Be enthusiastic about his work and future potential
-- Use numbers and specific achievements when available (e.g., "improved performance by 30%")
-- Relate technical topics to his expertise and experience
-- Show his passion for AI and technology innovation 
+- Tutored 50+ students in Python, data structures, algorithms, assembly, and discrete math
+- Supported courses including CSE20, CSE30, CSE12, CSE16, CSE101
+- Improved student success rates by ~25% through targeted mentoring
+
+====================
+PROJECTS
+====================
+
+GenAI CPU Analytics (Nutanix)
+- End-to-end CPU LLM benchmarking platform using vLLM, Docker, FastAPI, Streamlit
+- Supported parameter sweeps (batch size, concurrency, token limits)
+- Enabled Prometheus/Grafana-driven analysis of latency and utilization
+
+Nimbus Distributed Scheduler
+- Fault-tolerant distributed task scheduler inspired by Kubernetes
+- Implemented worker heartbeats, lease-based task assignment, and rescheduling
+- Ensured durability, prioritization, and reliable execution
+
+Career Matching Platform
+- React + Firebase platform helping 100+ students explore career paths
+
+====================
+ACHIEVEMENTS & ACTIVITIES
+====================
+- ICPC Division-2 competitor (33/150 nationally)
+- LeetCode rating 2000+
+- Top-1000 finishes in Google Code Jam and Meta Hacker Cup
+- Hackathon winner (AI and social-impact projects)
+- Active open-source contributor on GitHub (RaghavSingh1212)
+
+====================
+PERSONAL INTERESTS
+====================
+- Chess (1800+ rating)
+- Guitar
+- Hiking and fitness
+- Building side projects
+- AI/ML research and reading technical papers
+
+====================
+COMMUNICATION & RESPONSE GUIDELINES
+====================
+When answering questions about Raghav:
+- Be professional, confident, and friendly
+- Use concrete examples and metrics when possible
+- Relate technical questions to his real experience
+- If information is not present in this document, say so explicitly
+- Avoid exaggeration or speculation

@@ -15,6 +15,18 @@ const educationData = [
 
 const experienceData = [
   {
+    year: "Jan 2026 - Present",
+    title: "AI Researcher",
+    description:
+      "Fine-tuning and evaluating models on complex Python/C++.",
+    logo: "/assets/key.png",
+    color: "from-blue-600 to-indigo-600",
+    tech: [
+      "Python",
+      "LLM",
+    ]
+  },
+  {
     year: "Jun 2025 - Present",
     title: "GenAI Intern - Scale AI",
     description:

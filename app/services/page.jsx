@@ -10,7 +10,7 @@ const companyData = [
     name: "UC Santa Cruz",
     logo: "/assets/ucsc.png",
     description: "Computer Science Student",
-    date: "Sep 2022 - Present",
+    date: "Sep 2022 - Dec 2025",
     type: "education"
   },
   {
@@ -52,9 +52,17 @@ const companyData = [
     name: "Scale AI",
     logo: "/assets/sc.png",
     description: "GenAI Intern",
-    date: "Jan 2025 - Present",
+    date: "Jun 2025 - Present",
     type: "experience"
   },
+  {
+    name: "Keywords Studios",
+    logo: "/assets/key.png",
+    description: "AI Researcher",
+    date: "Jan 2026 - Present",
+    type: "experience"
+  },
+
 ];
 
 // Timeline component with dynamic pointer
@@ -572,7 +580,7 @@ const Services = () => {
                   <Typewriter
                     options={{
                       strings: [
-                        'I am a Computer Science student at UC Santa Cruz with a strong foundation in software engineering, machine learning, and AI. As a Software Engineer Co-Op Intern at Nutanix, I optimize GenAI inferencing with SIMD instructions and develop performance-monitoring dashboards to enhance efficiency. My research at AIEA Lab focuses on improving Transformer models and integrating AI with logic programming for enhanced inference and decision-making. Previously, as a Software Engineer Intern at Tech4Good, I built responsive UI components and implemented state management for a goal-setting app. Passionate about AI, system design, and full-stack development, I enjoy solving complex problems, optimizing performance, and building scalable applications that drive innovation.'
+                        'I am a Computer Science student at the University of California, Santa Cruz, graduated in December 2025. Over the past couple of years, I’ve had the chance to work across both infrastructure and applied AI at Scale AI, I focused on advancing large language models by fine-tuning and evaluating them on complex reasoning tasks. I contributed to improving model safety through red-teaming efforts, identified vulnerabilities, and designed benchmarks to assess edge-case performance. These efforts provided daily insights that refined research outcomes and optimized training pipelines. At Nutanix, I developed a containerized benchmarking platform to evaluate LLM inference on CPUs. I combined Docker Compose, FastAPI, and Prometheus for real-time monitoring and built a Streamlit frontend backed by SQLite for streamlined analytics. This platform enabled performance comparisons across hardware, guided deployment decisions, and delivered significant cost savings through better resource allocation. Together, these experiences have strengthened my foundation in scalable AI systems, benchmarking, and the practical application of containerization tools.'
                       ],
                       autoStart: true,
                       loop: false,
