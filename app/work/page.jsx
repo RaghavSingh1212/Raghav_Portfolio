@@ -30,6 +30,16 @@ const projects = [
   },
   {
     num: "03",
+    title: "Health Predictor",
+    description:
+      "Developed a Kubernetes-orchestrated, full-stack medical intake platform integrating Python and Gemini AI to automate symptom triage, optimizing MongoDB pipelines to slash physician data analysis time by 30%.",
+    stack: ["Python", "Kubernetes", "vLLM", "React", "Gemini API"],
+    image: "/assets/work/thumb5.png",
+    github: "https://github.com/RaghavSingh1212/HealthPredictor",
+    color: "from-purple-500 to-pink-500",
+  },
+  {
+    num: "04",
     title: "CircleRush",
     description:
       "Launched CircleRush, boosting task management productivity by 25% with social and competitive features. Enhanced user engagement through registration, group formation, and real-time leaderboard updates.",
@@ -39,7 +49,7 @@ const projects = [
     color: "from-blue-500 to-cyan-500",
   },
   {
-    num: "04",
+    num: "05",
     title: "AI-Slide Generator",
     description:
       "Developed AI-Slide Generator, an app utilizing React, Python, and the ChatGPT API to automate custom PowerPoint presentations from user prompts. Boosted productivity and connectivity by streamlining the presentation creation process.",
@@ -49,7 +59,7 @@ const projects = [
     color: "from-purple-500 to-pink-500",
   },
   {
-    num: "05",
+    num: "06",
     title: "E-Commerce Platform",
     description:
       "Developed a replica of a shopping platform with modern UI/UX design, responsive layout, and seamless user experience.",
@@ -59,7 +69,7 @@ const projects = [
     color: "from-green-500 to-emerald-500",
   },
   {
-    num: "06",
+    num: "07",
     title: "Skyland Game",
     description: "The games challenge players to navigate through a fantasy world, avoiding obstacles and collecting trophies to score points.",
     stack: ["Python", "Pygame", "GUI's"],
