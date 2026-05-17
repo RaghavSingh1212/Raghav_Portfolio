@@ -16,7 +16,7 @@ const educationData = [
 const experienceData = [
   {
     year: "Jan 2026 - Present",
-    title: "AI Researcher",
+    title: "Software Engineer",
     description:
       "Fine-tuning and evaluating models on complex Python/C++.",
     logo: "/assets/key.png",
@@ -27,8 +27,8 @@ const experienceData = [
     ]
   },
   {
-    year: "Jun 2025 - Present",
-    title: "GenAI Intern - Scale AI",
+    year: "Jun 2025 - Dec 2025",
+    title: "Software Engineer Intern (GenAI)- Scale AI",
     description:
       "At Scale AI, I work on improving code reasoning in LLMs by fine-tuning and evaluating models on complex Python/C++/Java problems.",
     logo: "/assets/sc.png",
@@ -61,7 +61,7 @@ const experienceData = [
   },
   {
     year: "Jan 2024 - Apr 2025",
-    title: "Software Developer - Tech4Good",
+    title: "Undergraduate Researcher - Tech4Good",
     description:
       "I led the development of 25+ responsive UI components using TypeScript, React, Angular (NgRx, RxJS), and integrated backends with Node.js, Flask, and MongoDB.",
     logo: "/assets/t4.png",
