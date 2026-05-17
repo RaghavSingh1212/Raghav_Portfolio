@@ -22,7 +22,7 @@ const projects = [
     num: "02",
     title: "Nimbus-Distributed Task Scheduler",
     description:
-      "Built a fault-tolerant distributed task scheduler inspired by Kubernetes, where a central scheduler coordinates work across multiple worker nodes using heartbeat-based failure detection and lease-based task assignment. The system automatically recovers from worker crashes by reassigning in-progress tasks, supports priority-based scheduling, and ensures reliable task execution through retries and durable state tracking.",
+      "Built a fault-tolerant distributed task scheduler inspired by Kubernetes, where a central scheduler coordinates work across multiple worker nodes using heartbeat-based failure detection and lease-based task assignment.",
     stack: ["Go", "gRPC", "SQLite", "Docker"],
     image: "/assets/work/thumb4.png",
     github: "https://github.com/RaghavSingh1212/Nimbus-Distrivuted_Scheduler",
