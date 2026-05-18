@@ -7,7 +7,7 @@ const educationData = [
     year: "2022 - 2026",
     title: "Computer Science - University of California Santa Cruz",
     description:
-      "GPA: 3.75/4.0 ; \n\n Relevant Coursework: Data Structures & Algorithms, Operating Systems, Computer Architecture, Distributed Systems, Artificial Intelligence, Machine Learning, Software Design, System Design, Assembly Language, Cybersecurity, Computer Organization, Computer Networks, Computer Security, NLP.",
+      "GPA: 3.65/4.0 ; \n\n Relevant Coursework: Data Structures & Algorithms, Operating Systems, Computer Architecture, Distributed Systems, Artificial Intelligence, Machine Learning, Software Design, System Design, Assembly Language, Cybersecurity, Computer Organization, Computer Networks, Computer Security, NLP.",
     logo: "/assets/ucsc.png",
     color: "from-blue-500 to-cyan-500",
   },
