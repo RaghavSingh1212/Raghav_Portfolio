@@ -28,17 +28,17 @@ const companyData = [
     type: "experience"
   },
   {
-    name: "Tech4Good",
-    logo: "/assets/t4.png",
-    description: "Software Developer",
-    date: "Jan 2024 - Mar 2025",
-    type: "experience"
-  },
-  {
     name: "AIEA Lab",
     logo: "/assets/aiea.png",
     description: "Undergraduate Researcher",
     date: "Sep 2024 - Mar 2025",
+    type: "experience"
+  },
+  {
+    name: "Tech4Good",
+    logo: "/assets/t4.png",
+    description: "Undergraduate Researcher",
+    date: "Jan 2024 - Mar 2025",
     type: "experience"
   },
   {
@@ -51,15 +51,15 @@ const companyData = [
   {
     name: "Scale AI",
     logo: "/assets/sc.png",
-    description: "GenAI Intern",
-    date: "Jun 2025 - Present",
+    description: "Software Engineer Intern",
+    date: "Jun 2025 - Dec 2025",
     type: "experience"
   },
   {
     name: "Keywords Studios",
     logo: "/assets/key.png",
-    description: "AI Researcher",
-    date: "Jan 2026 - Present",
+    description: "Software Engineer",
+    date: "Jan 2026 - Jun 2026",
     type: "experience"
   },
 

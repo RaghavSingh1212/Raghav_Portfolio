@@ -15,10 +15,10 @@ const educationData = [
 
 const experienceData = [
   {
-    year: "Jan 2026 - Present",
-    title: "Software Engineer",
+    year: "Feb 2026 - Jun 2026",
+    title: "Software Engineer (Amazon AGI) - Keywords Studios",
     description:
-      "Fine-tuning and evaluating models on complex Python/C++.",
+      "Supporting Amazon AI projects - AGI Autonomy",
     logo: "/assets/key.png",
     color: "from-blue-600 to-indigo-600",
     tech: [
@@ -28,7 +28,7 @@ const experienceData = [
   },
   {
     year: "Jun 2025 - Dec 2025",
-    title: "Software Engineer Intern (GenAI)- Scale AI",
+    title: "Software Engineer Intern GenAI - Scale AI",
     description:
       "At Scale AI, I work on improving code reasoning in LLMs by fine-tuning and evaluating models on complex Python/C++/Java problems.",
     logo: "/assets/sc.png",
@@ -44,7 +44,7 @@ const experienceData = [
     year: "Jan 2025 - Jun 2025",
     title: "Software Engineer Intern - Nutanix",
     description:
-      "At Nutanix, I built a benchmarking platform to evaluate LLM performance on CPUs across diverse hardware setups, supporting data-driven deployment decisions. I containerized the system using Docker Compose and FastAPI, integrated real-time monitoring with Prometheus and Grafana, and developed a Streamlit frontend backed by SQLite—leading to $50K+ in potential cost savings",
+      "At Nutanix, I built a benchmarking platform to evaluate LLM performance on CPUs across diverse hardware setups, supporting data-driven deployment decisions.",
     logo: "/assets/nut.png",
     color: "from-purple-500 to-pink-500",
     tech: [
@@ -60,7 +60,7 @@ const experienceData = [
     ]
   },
   {
-    year: "Jan 2024 - Apr 2025",
+    year: "Jan 2024 - Mar 2025",
     title: "Undergraduate Researcher - Tech4Good",
     description:
       "I led the development of 25+ responsive UI components using TypeScript, React, Angular (NgRx, RxJS), and integrated backends with Node.js, Flask, and MongoDB.",
